@@ -5,7 +5,7 @@ import RoomsCard from './RoomsCard';
 
 const Rooms = () => {
     return (
-        <section className='my-16 w-10/12 mx-auto'>
+        <section id='room' className='my-16 w-10/12 mx-auto'>
             <div className='mb-10'>
                 <h3 className='text-center text-3xl font-semibold text-gray-700'>Our Accommodations</h3>
                 <div className='h-1 bg-primary w-1/12 rounded mx-auto mt-2'></div>

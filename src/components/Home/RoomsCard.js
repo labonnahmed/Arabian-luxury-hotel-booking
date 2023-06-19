@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const RoomsCard = ({ room }) => {
     return (
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
             <div className='flex gap-4 p-4'>
-                <p className='bg-teal-900 text-gray-200 rounded-full px-4 py-1 text-2xl'>{room.letter}</p>
+                <p className='bg-teal-900 text-gray-200 rounded-full px-4 py-1.5 text-2xl'>{room.letter}</p>
                 <h5 className="mb-2 my-auto text-base tracking-tight text-gray-900 dark:text-white">{room.name}</h5>
             </div>
-            <img className="rounded-t-lg w-11/12 mx-auto" src={room.image} alt="" />
+            <img className="rounded-t-lg mx-auto transition-height duration-500 ease-in-out h-48 hover:h-56 object-cover" src={room.image} alt="" />
             <div className="p-5">
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{room.description}</p>
                 <div className='flex justify-between'>
